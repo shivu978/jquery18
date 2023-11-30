@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>fade_login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $("#demo").click(function(){
+                $("#slider img").fadeToggle(5000);
+            });
+            //toggler a login
+            $("#login").click(function(){
+                $(".login").slideToggle(3000);
+                
+            });
+            
+        })
+        </script>
+    <style>
+        body
+        {
+            margin:  0;
+            padding: 0;
+        }
+        #slide
+        {
+            width: 100%;
+            height: auto;
+            background-color: lightgoldenrodyellow;
+            color: black;
+            padding: 15px;
+        }
+        #slide b
+        {
+         font-size: 30px;
+        }
+        #slider img
+        {
+            width: 100%;
+            height: auto;
+            display: none;
+
+        }
+        #login
+        {
+            width: 130px;
+            height: auto;
+            background-color: white;
+            border: none;
+            padding: 10px;
+            float: right;
+            margin-right: 3%;
+        }
+        .login
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            padding: 25px,15px;
+            box-shadow: 4px 4px 4px 4px;
+            margin-top: 5%;
+            display: none;
+            
+        }
+
+        .form-group input
+        {
+            width: 350px;
+            height: auto;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        input[type="submit"]
+        {
+            width: 350px;
+            height:auto;
+            background-color: lightcoral;
+            border: none;
+            color: black;
+        }
+        
+        
+        
+        </style>
+</head>
+<body>
+    <div id="slide"><b id="demo"> Click For Slide >>></b><button type="button" id="login">Login </button></div>
+        <div id="slider">
+            <img src="image/img2.jpg">
+        </div>
+            
+        <div class="login">
+        <div class="form-group">
+            <h1 style="margin-left: 3%;">Login form</h1>
+            </div>
+            
+            <div class="form-group">
+                  <input type="text" name="email" placeholder="Enter Your Email*">
+            </div>
+
+                    
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="password*">
+                </div>
+
+                    
+                <div class="form-group">
+                    <input type="submit" name="submit" value="login" style="width: 380px;" >
+                </div>
+            
+            
+            </div>
+    </div>
+</body>
+</html>
